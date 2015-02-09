@@ -32,3 +32,10 @@ Homework
    500px x 500px
 4. Make sure that `/admin` is secured using `before_action` and
    `has_secure_password`
+
+Notes
+----
+
+* you can get photos from http://lorempixel.com/ or http://www.webcak.es/#polish/images, or http://www.pexels.com/
+* you'll basically use all gems we used today
+

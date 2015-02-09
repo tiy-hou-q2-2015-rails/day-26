@@ -6,13 +6,12 @@ class SessionsController < ApplicationController
   def create
     # get credentials from the form
     username = params[:username]
+    password = params[:password]
 
     # find the user
     user = User.find_by username: username
 
-    if user
-
-      # validate password
+    if user.try(:authenticate, password)
 
       # store the id in the session
       session[:user_id] = user.id

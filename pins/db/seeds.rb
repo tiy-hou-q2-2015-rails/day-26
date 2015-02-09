@@ -1,5 +1,5 @@
-vitaly = User.create username: "vitaly"
-leroy = User.create username: "its-leh-roy"
+vitaly = User.create username: "vitaly", password: "12345"
+leroy = User.create username: "its-leh-roy", password: "54321"
 
 
 vitaly.pins.create photo_url: "http://lorempixel.com/output/nightlife-q-c-640-480-3.jpg", url: "http://reddit.com"

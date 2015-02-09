@@ -1,10 +1,10 @@
 vitaly = User.create username: "vitaly", password: "12345"
 leroy = User.create username: "its-leh-roy", password: "54321"
 
+categories = %w(sports nightlife animals food nature cats fashion technics transport people)
 
-vitaly.pins.create photo_url: "http://lorempixel.com/output/nightlife-q-c-640-480-3.jpg", url: "http://reddit.com"
-vitaly.pins.create photo_url: "http://lorempixel.com/output/nightlife-q-c-640-480-4.jpg", url: "http://twitch.tv"
 
-leroy.pins.create photo_url: "http://lorempixel.com/output/nightlife-q-c-640-480-1.jpg", url: "http://soulruckus.com"
-leroy.pins.create photo_url: "http://lorempixel.com/output/nightlife-q-c-640-480-5.jpg", url: "http://themat.com"
-leroy.pins.create photo_url: "http://lorempixel.com/output/sports-q-c-640-480-5.jpg", url: "http://allthingsgym.com"
+500.times do
+  user = [vitaly, leroy].sample
+  user.pins.create photo_url: "http://lorempixel.com/500/500/#{categories.sample}/"
+end

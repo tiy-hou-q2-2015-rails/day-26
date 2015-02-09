@@ -3,7 +3,7 @@ class PinsController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    @pins = @current_user.pins
+    @pins = @current_user.pins.page(params[:page])
     #@pins = Pin.where(user_id: session[:user_id]).all # only pins for vitaly (or the current_user)
   end
 

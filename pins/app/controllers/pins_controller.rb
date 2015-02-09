@@ -12,7 +12,7 @@ class PinsController < ApplicationController
   end
 
   def create
-    @pin = Pin.new params.require(:pin).permit(:photo_url, :url)
+    @pin = Pin.new params.require(:pin).permit(:photo, :url)
     @pin.user = @current_user
     if @pin.save
       redirect_to root_path, notice: "COOL BRO"

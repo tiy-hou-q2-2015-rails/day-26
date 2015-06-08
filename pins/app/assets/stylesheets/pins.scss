@@ -1,0 +1,25 @@
+$asbestos: #2C3E50;
+h1 {
+  border-bottom: 1px solid $asbestos;
+  color: darken($asbestos, 10%);
+  margin-bottom: 2rem;
+}
+
+.pin {
+  border: 1px solid $asbestos;
+  padding: 1em;
+  width: 325px;
+  display: inline-block;
+  margin-right: 1em;
+
+  img {
+    width: 300px;
+    height: 300px;
+  }
+  p {
+    font-style: italic;
+    color: lighten($asbestos, 10%);
+    margin-bottom: 0;
+  }
+
+}

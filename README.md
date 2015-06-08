@@ -1,4 +1,4 @@
-Day 31 - Gems that will Make your Day
+Day 26 - Gems that will Make your Day
 ============
 
 Challenge

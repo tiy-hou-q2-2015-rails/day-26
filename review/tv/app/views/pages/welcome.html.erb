@@ -1,0 +1,14 @@
+<h1>Show me the Shows!</h1>
+
+<%= link_to "Add Actor",  new_actor_path %>
+
+<% @shows.each do |show| %>
+
+  <h2><%= show.title %></h2>
+  <ul>
+    <% show.actors.each do |actor| %>
+      <li><%= actor.full_name %> plays <%= actor.character %></li>
+    <% end %>
+  </ul>
+
+<% end %>

@@ -1,9 +1,14 @@
 Rails.application.routes.draw do
+
   root 'pins#index'
 
   get 'pins/new' => 'pins#new', as: :new_pin
 
   get 'pins/:id' => 'pins#show', as: :pin
+
+  get 'signin' => 'session#new', as: :sign_in
+  get 'authenticate' => 'session#create', as: :authenticate
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

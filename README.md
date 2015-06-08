@@ -1,7 +1,7 @@
 Day 31 - Gems that will Make your Day
 ============
 
-Quiz
+Challenge
 ----
 
 The rails app in `railsy` is broke -- the homepage does not show, and we need

@@ -17,25 +17,9 @@ Today
 
 1. Session and Authentication
 2. `has_secure_password`
-3. `kaminari` (pagination)
 4. `simple_form`
-5. `carrierwave`
 
-
-Homework
--------
-
-1. Create a rails app that will store photos
-1. Have ability to upload photos when you go to `/admin`
-2. Show the photos on your `root_path`, but only 6 to a page (pagination)
-3. Make sure when you upload your photos that you are resizing the photos to
-   500px x 500px
-4. Make sure that `/admin` is secured using `before_action` and
-   `has_secure_password`
-
-Notes
+Assignment
 ----
 
-* you can get photos from http://lorempixel.com/ or http://www.webcak.es/#polish/images, or http://www.pexels.com/
-* you'll basically use all gems we used today
-
+No assignment today, complete lab from week 4.

@@ -1,4 +1,9 @@
 class ActorsController < ApplicationController
+
+  before_action do
+    authenticate_user!
+  end
+
   def new
     @actor = Actor.new
   end

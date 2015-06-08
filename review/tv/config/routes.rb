@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  get 'sign_in' => 'session#new', as: :sign_in
+  get 'sign_out' => 'session#destroy', as: :sign_out
+  post 'auth' => 'session#create', as: :auth
+
   root 'pages#welcome'
 
   get 'actors/new' => 'actors#new', as: :new_actor

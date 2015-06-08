@@ -16,11 +16,25 @@
 
 <div class="container">
 
-  <nav>
-    <div class="text-right">
-      <%= link_to "Sign Out", sign_out_path %>
-    </div>
-  </nav>
+  <% if @current_user.present? %>
+    <nav>
+      <div class="row">
+        <div class="col-xs-6">
+          Hi <%= @current_user.username %>!
+        </div>
+        <div class="col-xs-6">
+
+
+          <div class="text-right">
+            <%= link_to "New Pin", new_pin_path, class: "btn btn-default" %>
+            <%= link_to "Sign Out", sign_out_path, class: "btn btn-default" %>
+          </div>
+        </div>
+      </div>
+
+    </nav>
+
+  <% end %>
   <%= yield %>
 </div>
 

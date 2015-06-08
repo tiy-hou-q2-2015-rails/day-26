@@ -2,7 +2,9 @@
 
 <% @pins.each do |pin| %>
   <div class="pin">
-    <%= image_tag pin.photo_url %>
+    <%= link_to pin.link do %>
+      <%= image_tag pin.photo_url %>
+    <% end %>
     <p>Pinned by <%= pin.user.username %> <%= distance_of_time_in_words_to_now pin.created_at %> ago</p>
   </div>
 <% end %>

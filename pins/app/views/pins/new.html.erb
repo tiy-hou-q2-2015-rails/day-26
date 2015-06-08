@@ -1,2 +1,7 @@
 <h1>Pins#new</h1>
-<p>Find me in app/views/pins/new.html.erb</p>
+
+<%= simple_form_for @pin do |f| %>
+  <%= f.input :photo_url %>
+  <%= f.input :link %>
+  <%= f.submit class: "btn btn-primary btn-lg"%>
+<% end %>

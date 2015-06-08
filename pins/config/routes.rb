@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get 'pins/new' => 'pins#new', as: :new_pin
 
   get 'pins/:id' => 'pins#show', as: :pin
+  post 'pins' => 'pins#create', as: :pins
 
   get 'signin' => 'session#new', as: :sign_in
   post 'authenticate' => 'session#create', as: :authenticate

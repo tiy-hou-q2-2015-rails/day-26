@@ -7,8 +7,20 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <%= notice %>
+  <% if alert %>
+    <div class="alert alert-danger" role="alert">
+      <%= alert %>
+    </div>
+  <% end %>
 
 <div class="container">
+
+  <nav>
+    <div class="text-right">
+      <%= link_to "Sign Out", sign_out_path %>
+    </div>
+  </nav>
   <%= yield %>
 </div>
 

@@ -7,8 +7,8 @@ Rails.application.routes.draw do
   get 'pins/:id' => 'pins#show', as: :pin
 
   get 'signin' => 'session#new', as: :sign_in
-  get 'authenticate' => 'session#create', as: :authenticate
-
+  post 'authenticate' => 'session#create', as: :authenticate
+  get 'signout' => 'session#destroy', as: :sign_out
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
